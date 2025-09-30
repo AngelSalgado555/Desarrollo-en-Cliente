@@ -1,0 +1,19 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 1838px;
+    height: 500px;
+}
+
+.textodeimagen{
+    position: absolute;
+    bottom: 51%;
+    left: 35%;
+    color: black;
+    font-size: 80px;
+    
+}
