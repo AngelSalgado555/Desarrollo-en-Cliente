@@ -20,37 +20,42 @@ for (let i = 0; i < array - 1; i++) {
 console.log("El array de menor a mayor es: " + numbers);
 
 
-/*
+
 //Ejercicio 2
 let usuario = ["Diurno"];
 let contraseña = ["Diurno123"];
 
 do{
-    let num = prompt("Tienes usuario y contraseña? 1.Si 2.No");
+    let num = prompt("Tienes usuario y contraseña?  1.Si  2.No");
     if (num == 1){
-        let user = prompt("Introduce tu usuario: ");
-        if (user != usuario) {
-            alert("Usuario incorrecto");
-            continue;
-        }
-        let pass = prompt("Introduce tu contraseña: ");
-        if (pass != contraseña) {
-            alert("Contraseña incorrecta");
-            continue;
-        }
+        let user = [];
+        do {
+            user = prompt("Introduce tu usuario:");
+            if (user != usuario){
+                alert("El usuario es incorrecto");
+            }
+        }while (user != usuario);
+
+        let pass = [];
+        do {
+            pass = prompt("Introduce tu contraseña:");
+            if (pass != contraseña){
+                alert("Contraseña incorrecta");
+            }
+        }while (pass != contraseña);
+
         if (user == usuario && pass == contraseña) {
             alert("Has iniciado sesión correctamente");
-            break;
         }
     } else if (num == 2) {
-        let newuser = prompt("Crea tu usuario: ");
-        let newpass = prompt("Crea tu contraseña: ");
-        usuario.push(newuser);
-        contraseña.push(newpass);
+        let newUser = prompt("Crea tu usuario: ");
+        let newPass = prompt("Crea tu contraseña: ");
+        usuario.push(newUser);
+        contraseña.push(newPass);
         alert("Usuario y contraseña creados correctamente");
     }
 } while (num != 2);
- 
+
 
 //Ejercicio 3
 let notas = [
@@ -94,25 +99,29 @@ for (let i = 0; i < array - 1; i++) {
     }
 }
 console.log("El array de menor a mayor es: " + numbers);
-*/
+
 
 //Ejercicio 5
 let arr1 = [
-    12, 45, 55, 88, 90
+    12, 45, 55, 88, 90, 46, 76, 99
 ];
 
 let arr2 = [
-    10, 43, 55, 88, 12
+    10, 43, 55, 88, 12, 76, 42, 99
 ];
 
 let contador = 0; 
+let contadorB = 0;
 for (i = 0; i < arr1.length; i++){
     for (j = 0; j < arr2.length; j++){
         if (arr1[i] === arr2[j]){
             contador++;
+            if (i === j){
+                contadorB++;
+            }
         }
     }
 }
-
-alert("Los números que son iguales son: " + contador);
-
++
+alert("Los números que son iguales son: " + contador + " y las posiciones iguales son: " + contadorB);
+*/
