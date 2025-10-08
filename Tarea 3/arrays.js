@@ -100,7 +100,7 @@ for (let i = 0; i < array - 1; i++) {
 }
 console.log("El array de menor a mayor es: " + numbers);
 
-
+*/
 //Ejercicio 5
 let arr1 = [
     12, 45, 55, 88, 90, 46, 76, 99
@@ -123,5 +123,5 @@ for (i = 0; i < arr1.length; i++){
     }
 }
 alert("Los números que son iguales son: " + contador + " y las posiciones iguales son: " + contadorB);
-*/
+
 
