@@ -122,6 +122,6 @@ for (i = 0; i < arr1.length; i++){
         }
     }
 }
-+
 alert("Los números que son iguales son: " + contador + " y las posiciones iguales son: " + contadorB);
 */
+
