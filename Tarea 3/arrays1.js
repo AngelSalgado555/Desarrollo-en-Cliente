@@ -1,4 +1,3 @@
-
 //Ejercicio 1
 let num = Number(prompt("Introduce la cantidad de valores que introduciras: "));
 

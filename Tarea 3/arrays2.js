@@ -1,11 +1,13 @@
 //Ejercicio 2
-let usuario = ["Diurno"];
-let contraseña = ["Diurno123"];
+let usuario = [];
+let password = [];
+let user;
+let pass;
 
+let num = 0;
 do{
-    let num = prompt("Tienes usuario y contraseña?  1.Si  2.No");
+    num = prompt(" 1.Iniciar sesión\n 2.Resgistrarte\n 3.Salir ");
     if (num == 1){
-        let user = [];
         do {
             user = prompt("Introduce tu usuario:");
             if (user != usuario){
@@ -13,22 +15,27 @@ do{
             }
         }while (user != usuario);
 
-        let pass = [];
         do {
             pass = prompt("Introduce tu contraseña:");
-            if (pass != contraseña){
+            if (pass != password){
                 alert("Contraseña incorrecta");
             }
-        }while (pass != contraseña);
+        }while (pass != password);
 
-        if (user == usuario && pass == contraseña) {
-            alert("Has iniciado sesión correctamente");
+        for (let i = 0; i < usuario.length; i++){
+            if (usuario[i] === user && password === pass){
+                alert("Has iniciado sesión correctamente");
+            }
         }
     } else if (num == 2) {
         let newUser = prompt("Crea tu usuario: ");
         let newPass = prompt("Crea tu contraseña: ");
-        usuario.push(newUser);
-        contraseña.push(newPass);
+        usuario[usuario.length] = newUser;
+        password[password.length] = newPass;
         alert("Usuario y contraseña creados correctamente");
+    } else if (num == 3){
+        alert("Saliendo del programa");
+    } else {
+        alert("Opción incorrecta");
     }
-} while (num != 2);
+} while (num != 3);
