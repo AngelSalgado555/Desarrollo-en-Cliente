@@ -16,21 +16,4 @@ do{
     }
 }while (number != 0);
 
-//Ejercicio 3
 
-let cont = numbers.reduce((acumulador, numero) => {
-    acumulador[numero] = (acumulador[numero] || 0) + 1;
-    return acumulador;
-}, {});
-
-let numeroMasRepetido = null; 
-let maxRepeticiones = 0;
-
-for (let numero in cont){
-    if (cont[numero] > maxRepeticiones){
-        maxRepeticiones = cont[numero];
-        numeroMasRepetido = numero;
-    }
-}
-console.log(cont);
-console.log("El número más repetido es " + numeroMasRepetido + " y las veces que se ha repetido es " + maxRepeticiones);
