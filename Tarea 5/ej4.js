@@ -1,3 +1,6 @@
+
+
+//Rehacer este ejercicio de forma más clara (Esta parte esta ayudada con IA)
 let set1 = new Set();
 let set2 = new Set();
 let set3 = new Set();
