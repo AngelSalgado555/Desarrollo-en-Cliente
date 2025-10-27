@@ -4,20 +4,27 @@ let set3 = new Set();
 
 let allSets = new Set([set1, set2, set3]);
 
-for (let index = 0; index < allSets.size; index++) {
+number = 0;
+for (let innerSet of allSets){
     for (let index = 0; index < 3; index++) {
-        number = Number(prompt("Ingresa números al set: "));
-        allSets[index].add(number);
+        let nuevoValor = Number(prompt("Introduce el valor: "));
+        innerSet.add(nuevoValor);
     }
 }
 
-for (let index = 0; index < allSets.size; index++) {
-    number = Number("Qué número quieres ver que no se repita en ningún set?: ");
-    if (!allSets[index].has(number)){
-        alert("Este número no se repite en los distintos sets ");
+let contador = new Map();
+
+for (let innerSet of allSets){
+    for (let number of innerSet){
+        contador.set(number, (contador.get(number) || 0) + 1);
+    }
+}
+
+for (let [clave, cantidad] of contador){
+    if (cantidad > 1){
+        console.log("El número " + clave + " salio en " + cantidad + " sets. ");
     } else {
-        alert("Este número esta en algún otro set ");
+        console.log("El número no se repite");
     }
 }
 
-console.log(allSets);
