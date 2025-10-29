@@ -1,19 +1,26 @@
 function contarVocales(palabra){
     contador = 0;
-    if (palabra.includes("a")){
-        contador++;
-    } else if (palabra.includes("e")){
-        contador++;
-    } else if (palabra.includes("i")){
-        contador++;
-    } else if (palabra.includes("o")){
-        contador++;
-    } else if (palabra.includes("u")){
-        contador++;
+    for (let index = 0; index < palabra.length; index++) {
+        if (palabra.includes("a")){
+            contador++;
+        }
+        if (palabra.includes("e")){
+            contador++;
+        } 
+        if (palabra.includes("i")){
+            contador++;
+        } 
+        if (palabra.includes("o")){
+            contador++;
+        } 
+        if (palabra.includes("u")){
+            contador++;
+        }  
     }
     return contador;
 }
 
 
-world = "Hola";
-console.log(contarVocales(world));
+world = "Causas".toLowerCase();
+array = [world];
+console.log("El número de vocales que contiende " + world + " es : " + contarVocales(array));

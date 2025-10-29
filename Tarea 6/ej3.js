@@ -1,9 +1,13 @@
 function pasarFahrenheit(celsius){
+    do {
+        if(isNaN(celsius)){
+            alert("Número no valido");
+        }
+    } while (isNaN(celsius));
     result = 0; 
     result = (celsius * (9/5)) + 32; 
     return result; 
 }
 
-
-gradosCambiar = 54; 
-console.log(pasarFahrenheit(gradosCambiar));
+gradosCambiar = -5; 
+console.log(pasarFahrenheit(gradosCambiar) + " grados Fahrenheit");

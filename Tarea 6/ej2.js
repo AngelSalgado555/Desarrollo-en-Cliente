@@ -1,11 +1,11 @@
 function numeroFactorial(numero){
-    resultados = [];
+    result = 1; 
     for (let index = 1; index < numero; index++) {
-        resultados[index] = "Le numero es " + (numero - index) + " y el resultado es: " + numero * (numero - index);
+        result *= index + 1;
     }
-    return resultados;
+    return result;
 }
 
-numero = 5; 
-console.log(numeroFactorial(numero));
+numero = 10; 
+console.log("El factorial de " + numero + " es: " + numeroFactorial(numero));
 
