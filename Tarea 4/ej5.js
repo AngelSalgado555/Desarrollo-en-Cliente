@@ -25,7 +25,7 @@ do {
             alert("No es una opción valida, introduzca una de las dos opciones validas");
         }
     } else if (number == 2){
-        let encontrado = false; 
+        let encontrado = false;
         let eliminarProducto = prompt("Escribe el producto que quieres eliminar: ").toLowerCase();
         for (let index = 0; index < compra.length; index++) {
             if (eliminarProducto == compra[index]){
