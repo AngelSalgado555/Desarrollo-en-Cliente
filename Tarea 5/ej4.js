@@ -1,6 +1,3 @@
-
-
-//Rehacer este ejercicio de forma más clara (Esta parte esta ayudada con IA)
 let set1 = new Set();
 let set2 = new Set();
 let set3 = new Set();
@@ -30,4 +27,9 @@ for (let [clave, cantidad] of contador){
         console.log("El número no se repite");
     }
 }
+
+
+
+
+
 
