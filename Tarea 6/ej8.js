@@ -1,11 +1,11 @@
-function sinLimites(...numbers){
+function sinLimites(){
     let sumatorio = 0;
-    for (i = 0; i < numbers.length; i++){
-        sumatorio += numbers[i];
+    for (i = 0; i < arguments.length; i++){
+        sumatorio += arguments[i];
     }
 
     return sumatorio;
 }
 
-let result = sinLimites(23 , 23 , 12, 2, 6 , 9 ,3, 0 , 8, 73, 823, 83, 2109 , 21);
+let result = sinLimites(15, 55, 20, 110, 200, 50);
 console.log("El resultado de la suma es: " + result);

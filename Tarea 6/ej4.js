@@ -11,5 +11,5 @@ function esPrimo(valor){
     return true;
 }
 
-number = Number(prompt("Ingresa un número mayor a 0: "));
+number = Number(prompt("Ingresa un número mayor a 1: "));
 console.log(esPrimo(number));
