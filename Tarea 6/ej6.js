@@ -4,10 +4,10 @@ function segundoGrado(a, b, c){
         console.log("Números no validos, por favor revise que los parametros pasados esten bien ");
     }
     let resutl1 = (-b + Math.sqrt(b**2 - 4*a*c)) / (2*a);
-    soluciones[0] = resutl1;
+    soluciones.push(resutl1);
 
     let resutl2 = (-b - Math.sqrt(b**2 - 4*a*c)) / (2*a);
-    soluciones[1] = resutl2; 
+    soluciones.push(resutl2);
 
     return soluciones;
 }
