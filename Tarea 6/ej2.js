@@ -1,5 +1,5 @@
 function numeroFactorial(numero){
-    result = 1; 
+    let result = 1; 
     for (let index = 1; index < numero; index++) {
         result *= index + 1;
     }

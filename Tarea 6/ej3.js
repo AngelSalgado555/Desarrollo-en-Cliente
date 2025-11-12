@@ -4,7 +4,7 @@ function pasarFahrenheit(celsius){
             alert("Número no valido");
         }
     } while (isNaN(celsius));
-    result = 0; 
+    let result = 0; 
     result = (celsius * (9/5)) + 32; 
     return result; 
 }
