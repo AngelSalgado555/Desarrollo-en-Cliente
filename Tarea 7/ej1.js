@@ -1,7 +1,6 @@
 // Crear un objeto person con nombre, edad y ciudad. Acceder  asus porpiedades con . y con []. Cambiar el valor 
 // de edad y agregar un nueva propiedad profesión
 
-
 //Ejercicio 1
 class Persona {
     constructor (name, age, city){
