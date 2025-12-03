@@ -1,0 +1,1 @@
+console.log(navigator.permissions.query({name : "geolocation"}));
