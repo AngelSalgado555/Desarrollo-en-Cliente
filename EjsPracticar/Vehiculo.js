@@ -38,4 +38,9 @@ class Auto extends Vehiculo{
 
 }
 
-let auto1 = new Auto("Toyota", "")
+let auto1 = new Auto("Toyota", "Corolla", 2011, 5);
+
+let auto2 = new Auto("Audi", "A4", 2020, 5);
+
+auto1.descripcion();
+auto2.descripcion();
