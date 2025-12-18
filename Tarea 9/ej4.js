@@ -1,8 +1,7 @@
-let consulta = prompt("Donde lo quieres añadir? Arriba o Abajo?: ");
+let consulta = prompt("Donde lo quieres añadir? Arriba o Abajo?: ").toLowerCase();
 
-let elemento = prompt("Introduce el elemento que quieres agregar a la lista: ");
-consulta.toLocaleLowerCase();
-elemento.toLocaleLowerCase();
+let elemento = prompt("Introduce el elemento que quieres agregar a la lista: ").toLowerCase();
+
 
 if (consulta == "arriba"){
     let parent = document.getElementById("lista");

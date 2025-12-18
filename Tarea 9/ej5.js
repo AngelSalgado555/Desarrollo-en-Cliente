@@ -1,10 +1,13 @@
-medio = document.getElementById("medio");
-let antes = medio.previousElementSibling;
+let medio = prompt("Ingresa el elemento del medio: ");
 
-let despues = medio.nextElementSibling;
-if (medio == "Pablo"){
-    console.log("Antes: " + antes);
-    console.log("Después: " + despues);
+medioVerdadero = document.getElementById('medio');
+
+let antes = medioVerdadero.previousElementSibling;
+
+let despues = medioVerdadero.nextElementSibling;
+if (medio == medioVerdadero.textContent){
+    console.log("Antes: " + antes.textContent);
+    console.log("Después: " + despues.textContent);
 }
 
 
