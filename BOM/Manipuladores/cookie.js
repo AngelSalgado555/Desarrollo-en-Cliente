@@ -32,4 +32,5 @@ function checkCookie() {
   }
 }
 
+//Esto es solo el ejemplo que debo usar, falta saber como funciona
 //Hacerlo para los temas 
