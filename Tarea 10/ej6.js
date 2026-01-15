@@ -1,14 +1,15 @@
 let body = document.body;
-let theme = localStorage.getItem("theme");
 
 let oscuro = document.getElementById("botonOscuro");
 let claro = document.getElementById("botonClaro");
 
 function themeBlack(){
-    body.classList.remove();
+    body.className = "oscuro";
 }
 
 function themeWhite(){
-    body.classList.remove();
+    body.className = "claro";
 }
 
+oscuro.addEventListener("click", themeBlack);
+claro.addEventListener("click", themeWhite);

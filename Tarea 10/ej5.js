@@ -8,7 +8,7 @@ function verTexto(boton){
 }
 
 function dobleClick(){
-    console.log("No presiones doble vez, animal!!");
+    console.log("No presiones doble vez!!");
 }
 
 boton1.addEventListener("click", () => { verTexto(boton1)});
@@ -20,3 +20,5 @@ boton1.addEventListener("dblclick", dobleClick);
 boton2.addEventListener("dblclick", dobleClick);
 boton3.addEventListener("dblclick", dobleClick);
 boton4.addEventListener("dblclick", dobleClick);
+
+//La verdad es que no pude hacer este ejercicio, al parecer el problema esta en que el navegador se le complica diferenciar entre el click y el dobleclick y no se que podría hacer para que funcione 
