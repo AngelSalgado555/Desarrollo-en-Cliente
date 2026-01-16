@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejercicio 1 </title>
+    <style>
+        #padre{
+            border: 2px solid black; 
+        }
+
+        #hijo{
+            border: 2px solid black;
+        }
+
+        #nieto{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Realiza un ejercicio como el del ejemplo, con un div que contenga un div que contrenga otro div. Prueba el bubbling creando eventos para cada uno. (Prueba también con alguno de los eventos que no generan propagación)-->
+    <div id="padre">
+        Esto es el contenido del padre 
+        <div id="hijo">
+            Contenido del hijo
+            <div id="nieto" tabindex="0">
+                Contenido del nieto, y estoy usando un focus por lo que no debería haber burbujeo.
+            </div>
+        </div>
+    </div>
+
+    <script src="ej1.js">
+
+    </script>
+</body>
+</html>
