@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Ejercicio 2 </title>
+    <style>
+        #padre{
+            border: 2px solid black; 
+        }
+
+        #hijo{
+            border: 2px solid black;
+        }
+
+        #nieto{
+            border: 2px solid black;
+        }
+    </style>
 </head>
 <body>
     <!-- Duplica el ejercicio anterior y evita el bubbling -->
+    <div id="padre">
+        Esto es el contenido del padre 
+        <div id="hijo">
+            Contenido del hijo
+            <div id="nieto" tabindex="0">
+                Contenido del nieto, y estoy usando un focus por lo que no debería haber burbujeo.
+            </div>
+        </div>
+    </div>
+
+    <script src="ej2.js">
+
+    </script>
 </body>
 </html>
