@@ -24,12 +24,12 @@ const weapons = [
 ];
 const monsters = [
   {
-    name: "slime",
+    name: "trainee",
     level: 2,
     health: 15
   },
   {
-    name: "fanged beast",
+    name: "master",
     level: 8,
     health: 60
   },
@@ -42,8 +42,8 @@ const monsters = [
 const locations = [
   {
     name: "town square",
-    "button text": ["Go to store", "Go to cave", "Fight dragon"],
-    "button functions": [goStore, goCave, fightDragon],
+    "button text": ["Go to store", "Go to train", "Fight dragon"],
+    "button functions": [goStore, goTrain, fightDragon],
     text: "You are in the town square. You see a sign that says \"Store\"."
   },
   {
@@ -53,22 +53,22 @@ const locations = [
     text: "You enter the store."
   },
   {
-    name: "cave",
-    "button text": ["Fight slime", "Fight fanged beast", "Go to town square"],
-    "button functions": [fightSlime, fightBeast, goTown],
-    text: "You enter the cave. You see some monsters."
+    name: "train",
+    "button text": ["Fight trainee", "Fight master", "Go to town square"],
+    "button functions": [fightTrainee, fightMaster, goTown],
+    text: "You enter the training camp. You see a trainee and a master."
   },
   {
     name: "fight",
     "button text": ["Attack", "Dodge", "Run"],
     "button functions": [attack, dodge, goTown],
-    text: "You are fighting a monster."
+    text: "You are fighting a combatant."
   },
   {
     name: "kill monster",
     "button text": ["Go to town square", "Go to town square", "Go to town square"],
     "button functions": [goTown, goTown, goTown],
-    text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.'
+    text: 'The combatant screams "Arg!" as it dies. You gain experience points and find gold.'
   },
   {
     name: "lose",
@@ -92,7 +92,7 @@ const locations = [
 
 // initialize buttons -- (Antes con onclick, y ahora cambiados a addEventListener)
 button1.addEventListener("click", goStore);
-button2.addEventListener("click", goCave); 
+button2.addEventListener("click", goTrain); 
 button3.addEventListener("click", fightDragon);
 
 function update(location) {
@@ -114,7 +114,7 @@ function goStore() {
   update(locations[1]);
 }
 
-function goCave() {
+function goTrain() {
   update(locations[2]);
 }
 
@@ -161,12 +161,12 @@ function sellWeapon() {
   }
 }
 
-function fightSlime() {
+function fightTrainee() {
   fighting = 0;
   goFight();
 }
 
-function fightBeast() {
+function fightMaster() {
   fighting = 1;
   goFight();
 }
