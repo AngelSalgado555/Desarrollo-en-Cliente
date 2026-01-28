@@ -9,12 +9,15 @@ body {
 }
 
 #game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 500px;
   max-height: 400px;
   background-color: #ffffff;
   color: #ffffff;
-  margin: 30px auto 0px;
-  padding: 10px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
 #controls,
@@ -22,6 +25,9 @@ body {
   border: 1px solid #0a0a23;
   padding: 5px;
   color: #0a0a23;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: -5px 8px 3px;
 }
 
 #monsterStats {
@@ -34,6 +40,18 @@ body {
 
 .stat {
   padding-right: 10px;
+}
+
+#healthText{
+  color: green;
+}
+
+#xpText{
+  color: blue;
+}
+
+#goldText{
+  color: gold;
 }
 
 button {

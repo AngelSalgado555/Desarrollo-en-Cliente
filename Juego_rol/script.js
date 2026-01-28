@@ -90,19 +90,19 @@ const locations = [
   }
 ];
 
-// initialize buttons
-button1.onclick = goStore;
-button2.onclick = goCave;
-button3.onclick = fightDragon;
+// initialize buttons -- (Antes con onclick, y ahora cambiados a addEventListener)
+button1.addEventListener("click", goStore);
+button2.addEventListener("click", goCave); 
+button3.addEventListener("click", fightDragon);
 
 function update(location) {
   monsterStats.style.display = "none";
   button1.innerText = location["button text"][0];
   button2.innerText = location["button text"][1];
   button3.innerText = location["button text"][2];
-  button1.onclick = location["button functions"][0];
-  button2.onclick = location["button functions"][1];
-  button3.onclick = location["button functions"][2];
+  button1.addEventListener("click", location["button functions"][0]);
+  button2.addEventListener("click", location["button functions"][1]);
+  button3.addEventListener("click", location["button functions"][2]);
   text.innerHTML = location.text;
 }
 
@@ -145,7 +145,7 @@ function buyWeapon() {
   } else {
     text.innerText = "You already have the most powerful weapon!";
     button2.innerText = "Sell weapon for 15 gold";
-    button2.onclick = sellWeapon;
+    button2.addEventListener("click", sellWeapon);
   }
 }
 
