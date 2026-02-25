@@ -19,8 +19,6 @@ function mostrarDatos(animal){
     let nombreLista = document.createElement("li");
     nombreLista.textContent = "3 datos de " + animal["name"];
 
-    localStorage.setItem("nombreLista", nombreLista);
-
     let dato0 = document.createElement("li");
     let dato1 = document.createElement("li");
     let dato2 = document.createElement("li");
@@ -35,6 +33,9 @@ function mostrarDatos(animal){
     lista.appendChild(dato2);
 
     document.body.appendChild(lista);
+
+    //No supe sustituir los datos de la lista ya creada, así que aun conserva ese defecto, pense en usar localStorage pero no se me ocurrio nada más
+
 }
 
 async function animal() {
